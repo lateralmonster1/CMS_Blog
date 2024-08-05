@@ -1,0 +1,22 @@
+{{> header}}
+
+<h1>{{post.title}}</h1>
+<p>Posted by {{post.user.username}} on {{post.createdAt}}</p>
+<p>{{post.content}}</p>
+
+{{#if loggedIn}}
+  <form id="commentForm" action="/api/comments" method="POST">
+    <input type="hidden" name="post_id" value="{{post.id}}">
+    <label for="content">Comment:</label>
+    <textarea id="content" name="content" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+{{/if}}
+
+{{#each post.comments}}
+  <div>
+    <p>{{this.content}} - {{this.user.username}} on {{this.createdAt}}</p>
+  </div>
+{{/each}}
+
+{{> footer}}

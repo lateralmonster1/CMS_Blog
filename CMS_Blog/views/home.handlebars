@@ -1,0 +1,11 @@
+{{> header}}
+
+<h1>Homepage</h1>
+{{#each posts}}
+  <div>
+    <h2><a href="/post/{{this.id}}">{{this.title}}</a></h2>
+    <p>Posted by {{this.user.username}} on {{this.createdAt}}</p>
+  </div>
+{{/each}}
+
+{{> footer}}

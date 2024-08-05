@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  
+  nav .brand-logo {
+    font-size: 1.8rem;
+  }
+  
+ 
+  .nav-wrapper {
+    background-color: #2196F3; 
+  }
+  
+ 
+  form {
+    margin: 20px 0;
+  }
+  
+  form .input-field input[type=text],
+  form .input-field input[type=password],
+  form .input-field textarea {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  form .input-field label {
+    font-weight: bold;
+  }
+  
+ 
+  .btn-custom {
+    background-color: #2196F3;
+    color: #fff;
+  }
+  
+  .btn-custom:hover {
+    background-color: #1976D2;
+  }
+  
+
+  .blog-post {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h2 {
+    margin-top: 0;
+  }
+  
+  .blog-post .post-meta {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  .blog-post .post-content {
+    margin-top: 10px;
+  }
+  
+  
+  .comment {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .comment .comment-meta {
+    color: #888;
+    font-size: 0.8rem;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dashboard .post-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard .post-item .post-title {
+    margin: 0;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,12 @@
+{{> header}}
+
+<h1>Dashboard</h1>
+<button id="newPostBtn">New Post</button>
+{{#each posts}}
+  <div>
+    <h2>{{this.title}}</h2>
+    <a href="/post/{{this.id}}">View Post</a>
+  </div>
+{{/each}}
+
+{{> footer}}
