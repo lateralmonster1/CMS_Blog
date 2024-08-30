@@ -5,12 +5,11 @@ const { sequelize } = require('./config/connection');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const { Sequelize } = require('sequelize');
-const CustomPostgresQueryGenerator = require('./utils/custom-postgres-query-generator.js');
+const CustomPostgresQueryGenerator = require('./utils-merge/custom-postgres-query-generator.js');
 
 const db = new Sequelize ('database', 'username', 'password', {
   dialect: 'postgres',
-  queryGenerator: new CustomPostgresQueryGenerator(), // Use custom query generator
-  // other options
+  queryGenerator: new CustomPostgresQueryGenerator(),
 });
 
 module.exports = sequelize;
